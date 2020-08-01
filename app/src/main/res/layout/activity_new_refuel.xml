@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_newRefuel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_newrefuel_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        android:text="Preencha os campos do Abastecimento" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_newrefuel_form"
+        android:layout_below="@id/tv_newrefuel_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Selecionar Viatura -->
+        <TextView
+            android:id="@+id/tv_newrefuel_selectCarro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viatura:"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_newrefuel_viaturas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_selectCarro"
+            android:layout_alignTop="@id/tv_newrefuel_selectCarro">
+        </Spinner>
+
+        <!-- Fim de Selecionar Viatura -->
+
+
+        <!-- Selecionar Data -->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_insertdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_selectCarro"
+            android:text="Data:"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_newrefuel_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_insertdate"
+            android:layout_gravity="center"
+            android:layout_alignBaseline="@id/tv_newrefuel_insertdate"
+            android:text="Selecionar Data"/>
+
+        <!-- Fim de Selecionar Data -->
+
+
+        <!-- Selecionar Condutor -->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_selectDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_insertdate"
+            android:text="Condutor:"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_newrefuel_drivers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_selectDriver"
+            android:layout_alignTop="@id/tv_newrefuel_selectDriver">
+        </Spinner>
+
+        <!-- Fim de Selecionar Condutor -->
+
+        <!-- Selecionar Departamento -->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_selectDepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_selectDriver"
+            android:text="Departamento:"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_newrefuel_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_selectDepartment"
+            android:layout_alignTop="@id/tv_newrefuel_selectDepartment">
+        </Spinner>
+
+        <!-- Fim de Selecionar Departamento -->
+
+
+        <!-- Selecionar Combustivel -->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_selectTypeofFuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_selectDepartment"
+            android:text="Combustível:"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_newrefuel_typeOfFuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_selectTypeofFuel"
+            android:layout_alignTop="@id/tv_newrefuel_selectTypeofFuel">
+        </Spinner>
+
+        <!-- Fim de Selecionar Combustivel -->
+
+        <!-- Selecionar Depósito -->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_selectDepot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_selectTypeofFuel"
+            android:text="Depósito:"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_newrefuel_Depot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_selectDepot"
+            android:layout_alignTop="@id/tv_newrefuel_selectDepot">
+        </Spinner>
+
+        <!-- Fim de Selecionar Depósito -->
+
+        <!-- Inserir Kms Ultimo -->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_lastKms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_selectDepot"
+            android:text="Kms Ultimo:"
+            android:padding="10dp"/>
+        
+        <EditText
+            android:id="@+id/et_newrefuel_lastKms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_lastKms"
+            android:layout_alignBaseline="@id/tv_newrefuel_lastKms"
+            android:maxLines="1"
+            android:inputType="number"/>
+        
+        <!-- Fim Inserir Kms Ultimo -->
+
+        <!-- Inserir Kms -->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_Kms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_lastKms"
+            android:text="Kms:"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_newrefuel_Kms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_Kms"
+            android:layout_alignBaseline="@id/tv_newrefuel_Kms"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+        <!-- Fim Inserir Kms -->
+
+        <!-- Inserir Kms Percorridos-->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_KmsMade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_Kms"
+            android:text="Kms Percorridos:"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_newrefuel_KmsMade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_KmsMade"
+            android:layout_alignBaseline="@id/tv_newrefuel_KmsMade"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+        <!-- Fim Inserir Kms -->
+
+        <!-- Inserir Custo Unit -->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_unitCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_KmsMade"
+            android:text="Custo Unit:"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_newrefuel_unitCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_unitCost"
+            android:layout_alignBaseline="@id/tv_newrefuel_unitCost"
+            android:maxLines="1"
+            android:inputType="numberDecimal"/>
+
+        <!-- Fim de Inserir Custo Unit -->
+
+        <!-- Inserir Qtd -->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_Qtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_unitCost"
+            android:text="Qtd:"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_newrefuel_Qtd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_Qtd"
+            android:layout_alignBaseline="@id/tv_newrefuel_Qtd"
+            android:maxLines="1"
+            android:inputType="numberDecimal"/>
+
+        <!-- Fim de Inserir Qtd -->
+
+        <!-- Inserir Media -->
+
+        <TextView
+            android:id="@+id/tv_newrefuel_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrefuel_Qtd"
+            android:text="Media:"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_newrefuel_avg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_newrefuel_avg"
+            android:layout_alignBaseline="@id/tv_newrefuel_avg"
+            android:maxLines="1"
+            android:inputType="numberDecimal"/>
+
+        <!-- Fim de Inserir Qtd -->
+
+        
+        <RelativeLayout
+            android:paddingTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/tv_newrefuel_avg">
+
+            <Button
+                android:id="@+id/btn_newrefuel_insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Inserir"/>
+
+            <Button
+                android:id="@+id/btn_newrefuel_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btn_newrefuel_insert"
+                android:layout_weight="1"
+                android:text="Cancelar" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_newRepair"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_newrepair_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        android:text="Preencha os campos de despesa" />
+
+    <RelativeLayout
+        android:id="@+id/rl_newrepair_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_newRepair"
+        android:layout_margin="6dp"
+        android:orientation="vertical">
+
+        <!--Put form controls here-->
+
+        <TextView
+            android:id="@+id/tv_newrepair_selectCarro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Selecione o carro:" />
+
+        <TextView
+            android:id="@+id/tv_newrepair_selectTypeOfExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrepair_selectCarro"
+            android:padding="10dp"
+            android:text="Tipo de Despesa:" />
+
+        <TextView
+            android:id="@+id/tv_newrepair_insertDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrepair_selectTypeOfExpense"
+            android:padding="10dp"
+            android:text="Descrição:" />
+
+        <TextView
+            android:id="@+id/tv_newrepair_insertdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrepair_insertDescription"
+            android:padding="10dp"
+            android:text="Data:" />
+
+        <TextView
+            android:id="@+id/tv_newrepair_Supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrepair_insertdate"
+            android:padding="10dp"
+            android:text="Fornecedor:" />
+
+        <TextView
+            android:id="@+id/tv_newrepair_insertcost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrepair_Supplier"
+            android:padding="10dp"
+            android:text="Insira o custo:" />
+
+        <Spinner
+            android:id="@+id/sp_newrepair_viaturas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_newrepair_selectCarro"
+            android:layout_toEndOf="@id/tv_newrepair_selectCarro"></Spinner>
+
+        <Spinner
+            android:id="@+id/sp_newrepair_tipoDespesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_newrepair_selectTypeOfExpense"
+            android:layout_toEndOf="@id/tv_newrepair_selectTypeOfExpense"></Spinner>
+
+        <EditText
+            android:id="@+id/et_newrepair_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_newrepair_insertDescription"
+            android:layout_toEndOf="@id/tv_newrepair_insertDescription"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_newrepair_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_newrepair_insertdate"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@id/tv_newrepair_insertdate"
+            android:text="Selecionar Data" />
+
+        <Spinner
+            android:id="@+id/sp_newrepair_fornecedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_newrepair_Supplier"
+            android:layout_toEndOf="@id/tv_newrepair_Supplier"></Spinner>
+
+        <EditText
+            android:id="@+id/et_newrepair_custo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_newrepair_insertcost"
+            android:layout_toEndOf="@id/tv_newrepair_insertcost"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newrepair_insertcost"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <Button
+                android:id="@+id/btn_newrepair_insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Inserir" />
+
+            <Button
+                android:id="@+id/btn_newrepair_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btn_newrepair_insert"
+                android:layout_weight="1"
+                android:text="Cancelar" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

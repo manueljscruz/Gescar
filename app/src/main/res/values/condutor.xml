@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="condutor">
+        <item>Alberto Azevedo</item>
+        <item>Antonio Curvao</item>
+        <item>Antonio Souto</item>
+        <item>Indefinido</item>
+        <item>Jorge Curvao</item>
+        <item>Mario Joao</item>
+        <item>Mario Neiva</item>
+        <item>Ricardo Carvalho</item>
+        <item>Sr. Jorge Curvao</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="deposito">
+        <item>Deposito Empresa A</item>
+        <item>Deposito Empresa B</item>
+        <item>Macieira [MAC]</item>
+        <item>Perelhal[PER]</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fornecedor">
+        <item>Curvao</item>
+        <item>G3W</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departamento">
+        <item>ACEVDC</item>
+        <item>Antonio Pinheiro Dias Curvao</item>
+        <item>Antonio Pinheiro Dias Curvao, LDA</item>
+        <item>Departamento comercial</item>
+        <item>Departamento teste</item>
+        <item>Distribuição gás</item>
+        <item>Distribuição gasóleo</item>
+        <item>Macieira</item>
+        <item>Vinha e Curvão, Lda</item>
+    </string-array>
+</resources>
